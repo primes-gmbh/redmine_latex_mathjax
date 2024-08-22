@@ -1,6 +1,6 @@
 require 'redmine'
 ::Rails.logger.info 'Redmine LaTeX MathJax Macro'
-require File.dirname(__FILE__) + '/lib/redmine_latex_mathjax/hooks/view_layouts_base_html_head_hook'
+require File.expand_path('../lib/redmine_latex_mathjax/hooks/view_layouts_base_html_head_hook', __FILE__)
 
 Redmine::Plugin.register :redmine_latex_mathjax do
   name 'Redmine LaTeX MathJax Macro'
