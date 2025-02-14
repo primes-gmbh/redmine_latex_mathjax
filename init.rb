@@ -6,7 +6,7 @@ Redmine::Plugin.register :redmine_latex_mathjax do
   name 'Redmine LaTeX MathJax Macro'
   author 'RVD, 5inf'
   description 'Employ MathJax in all settings: wiki, issues, or every page.'
-  url 'https://github.com/5inf/redmine_latex_mathjax'
+  url 'https://github.com/primes-gmbh/redmine_latex_mathjax'
   author_url 'https://github.com/5inf'
   version '0.4.0'
 
