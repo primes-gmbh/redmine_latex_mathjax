@@ -6,7 +6,7 @@ This is a simple little plugin which allows mathematical notation to be used wit
 Requirements
 ------------
 
-Redmine 3.0.x, 3.1.x, 4.0.x or 4.1.x
+Redmine 3.0.x, 3.1.x, 4.0.x, 4.1.x, 5.0.x, 5.1.x or 6.0.x
 Other versions are not tested but may work.
 
 Installation
@@ -18,7 +18,10 @@ Installation
      cd /var/www/redmine
      bundle install --without development test --no-deployment
 5. run (currently not required) bundle exec rake redmine:plugins NAME=[plugin_name] RAILS_ENV=production
-6. Restart Redmine (e.g. by restarting Apache)
+6. (Might be required for Redmine 6.x):
+     mkdir /var/www/redmine/plugin_assets/redmine_latex_mathjax
+     cp -a /your/path/to/redmine/plugins/redmine_latex_mathjax/assets/* /var/www/redmine/plugin_assets/redmine_latex_mathjax/
+7. Restart Redmine (e.g. by restarting Apache)
 
 Login to Redmine and go to Administration->Plugins. You should now see 'Redmine LaTeX MathJax Macro'. Enjoy!
 
